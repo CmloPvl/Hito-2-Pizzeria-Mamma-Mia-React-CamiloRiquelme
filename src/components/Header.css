@@ -1,12 +1,4 @@
 .header {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.55),
-      rgba(0, 0, 0, 0.55)
-    ),
-    url("../assets/imgs/Header.jpg");
-  background-size: cover;
-  background-position: top;
-  padding: 100px 200px;
-  color: white;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  width: 100%;
 }
+
