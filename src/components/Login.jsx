@@ -66,7 +66,7 @@ const Login = () => {
 
         {error && <p className="text-danger">{error}</p>}
 
-        <button className="btn btn-dark w-100 mt-2">Ingresar</button>
+        <button className="btn btn-primary w-100 mt-2">Ingresar</button>
       </form>
     </div>
   );
