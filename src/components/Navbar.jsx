@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { formatNumber } from "../utils/formatNumber";
 
 const Navbar = () => {
@@ -6,26 +7,40 @@ const Navbar = () => {
 
   return (
     <nav className="d-flex justify-content-start align-items-center p-3 gap-2 bg-dark">
-      {/* Botón Home (siempre visible) */}
+      {/* Título */}
       <h3 className="text-light">Pizzería Mamma Mia!</h3>
-      <button className="btn btn-outline-light">🍕 Home</button>
+
+      {/* Home */}
+      <Link to="/" className="btn btn-outline-light">
+        🍕 Home
+      </Link>
 
       {/* Botones según token */}
       <div className="d-flex gap-2">
         {token ? (
           <>
-            <button className="btn btn-outline-light">🔓 Profile</button>
-            <button className="btn btn-outline-light">🔒 Logout</button>
+            <Link to="/profile" className="btn btn-outline-light">
+              🔓 Profile
+            </Link>
+
+            <Link to="/logout" className="btn btn-outline-light">
+              🔒 Logout
+            </Link>
           </>
         ) : (
           <>
-            <button className="btn btn-outline-light">🔐 Login</button>
-            <button className="btn btn-outline-light">🔐 Register</button>
+            <Link to="/login" className="btn btn-outline-light">
+              🔐 Login
+            </Link>
+
+            <Link to="/register" className="btn btn-outline-light">
+              🔐 Register
+            </Link>
           </>
         )}
       </div>
 
-      {/* Botón Total (siempre visible) */}
+      {/* Total */}
       <button className="btn btn-dark border-info text-info ms-auto">
         🛒 Total: ${formatNumber(total)}
       </button>
