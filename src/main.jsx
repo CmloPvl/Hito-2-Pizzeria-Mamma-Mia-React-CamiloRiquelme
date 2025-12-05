@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/Hito-2-PizzeriaMammaMia-React-CamiloRiquelme">
+    <BrowserRouter basename="/Hito-2-Pizzeria-Mamma-Mia-React-CamiloRiquelme">
       <App />
     </BrowserRouter>
   </StrictMode>,
