@@ -40,10 +40,10 @@ const Navbar = () => {
         )}
       </div>
 
-      {/* Total */}
-      <button className="btn btn-dark border-info text-info ms-auto">
+      {/* Carrito — ahora es un Link funcional */}
+      <Link to="/cart" className="btn btn-dark border-info text-info ms-auto">
         🛒 Total: ${formatNumber(total)}
-      </button>
+      </Link>
     </nav>
   );
 };
